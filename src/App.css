@@ -1,0 +1,20 @@
+#root {
+  height: 100%;
+  margin: 0px;
+  background: #f3f3f3;
+  text-align: center;
+  background-size: cover;
+  background-position: center top;
+}
+.App {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+@font-face {
+  font-family: "BankGothic Bold";
+  src: local("BankGothic Bold"),
+    url("./assets/fonts/BankGothic Bold.ttf") format("truetype");
+}

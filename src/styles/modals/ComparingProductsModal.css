@@ -1,0 +1,30 @@
+.ComparingProductsModal h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #468fcb;
+}
+.ComparingProductsModal {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+.ComparingProductsModal table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  border: 0px;
+}
+.ComparingProductsModal th {
+  color: white;
+  border: 1px solid #2980c1;
+  background: rgba(41, 128, 193, 1) 100%;
+  padding: 15px;
+  width: 0px;
+}
+.ComparingProductsModal td {
+  padding: 8px;
+  border: 1px solid grey;
+}
+.ComparingProductsModal tr:nth-child(even) {
+  background-color: rgb(245, 245, 245);
+}

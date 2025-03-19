@@ -1,0 +1,29 @@
+.TosModal {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70vw !important;
+  font-size: 0.8rem;
+}
+
+.TosModal h2 {
+  display: inline-block;
+  color: #871d05;
+  font-weight: 200;
+  margin: 0px;
+}
+.TosModal p {
+  text-align: left;
+  color: rgb(88, 88, 88);
+}
+.TosModal h4 {
+  color: #468fcb;
+  font-weight: 600;
+  text-align: left;
+}
+.TosModal ol {
+  text-align: left;
+  margin-right: 100px;
+  color: rgb(88, 88, 88);
+}
+.TosModal li {
+  padding-left: 15px;
+}

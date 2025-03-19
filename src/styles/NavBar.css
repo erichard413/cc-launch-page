@@ -1,0 +1,37 @@
+.NavBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  flex-direction: row;
+  height: 75px;
+}
+.NavItem {
+  display: inline-block;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: linear-gradient(
+    180deg,
+    rgba(88, 177, 251, 1) 0%,
+    rgba(41, 128, 193, 1) 100%
+  );
+  color: white;
+  font-family: Helvetica;
+  font-weight: 500;
+  border-left: 1px solid rgb(139, 139, 139);
+}
+.NavItem.first {
+  border-left: 0px;
+}
+.NavBar a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+.NavItem:hover {
+  background: linear-gradient(180deg, #005197, #003869);
+  padding-top: 19px;
+  padding-bottom: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}

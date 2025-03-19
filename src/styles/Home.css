@@ -1,0 +1,135 @@
+.Home {
+  max-width: 100%;
+}
+
+.Home > .main-content {
+  margin-top: 25px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #c8c8c8;
+  min-height: 400px;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px #888;
+  box-shadow: 0 0 5px #888;
+  background-color: #fff;
+  padding: 25px;
+}
+
+#cardImgs {
+  display: inline-block;
+  width: 33%;
+  box-shadow: #888;
+}
+
+#cardImgs-div {
+  width: 40%;
+}
+
+.Home h1 {
+  padding: 15px;
+  font-family: "BankGothic Bold";
+  color: #053c8f;
+  font-size: 1.8rem;
+  margin: 0px;
+}
+.Home .top-container {
+  margin: auto;
+  height: 255px;
+  font-family: "BankGothic Bold";
+  width: 90%;
+  border-top: 1px solid rgb(153, 153, 153);
+  border-bottom: 1px solid rgb(153, 153, 153);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-image: url("../assets/woman-holding-phone-bg.png");
+  background-position: right;
+}
+.Home .content-div {
+  display: flex;
+  flex-direction: row;
+}
+.Home #cardImgs {
+  display: inline-block;
+  width: 168px;
+}
+
+.Home ul {
+  padding-top: 20px;
+  list-style: none; /* Remove HTML bullets */
+  text-align: left;
+  padding: 0px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Home li {
+  padding-left: 16px;
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+}
+
+.Home li::before {
+  content: "•"; /* Insert content that looks like bullets */
+  padding-right: 5px;
+  color: #053c8f; /* Or a color you prefer */
+}
+.Home #list-container {
+  display: inline-block;
+  text-align: center;
+}
+
+.Home .top-container > div {
+  flex: 1;
+}
+.Home .bottom-content {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Home .bottom-content > div {
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid #cacaca;
+  width: 24.5%;
+  display: inline-block;
+  border-radius: 5px;
+  background: linear-gradient(
+    180deg,
+    rgba(235, 235, 235, 1) 0%,
+    rgba(255, 255, 255, 1) 51%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  height: 250px;
+}
+.Home h3 {
+  padding-top: 0px;
+  font-size: 1rem;
+  display: inline-block;
+  color: #468fcb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Home .bottom-content ul {
+  padding: 0px;
+  margin-bottom: 20px;
+}
+.Home .bottom-content li {
+  font-size: 0.9rem;
+  padding: 0px;
+  padding-left: 15px;
+}
+.Home .bottom-content button {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 113, 194, 1) 0%,
+    rgba(1, 80, 158, 1) 100%
+  );
+  color: white;
+  padding: 5px;
+  font-size: 1rem;
+  border: 0px;
+  font-weight: 300;
+  border-radius: 5px;
+  cursor: pointer;
+}

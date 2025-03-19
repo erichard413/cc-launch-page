@@ -1,0 +1,22 @@
+.TopRightLinks {
+  background-color: #003e6f;
+  border-bottom-left-radius: 5px;
+  box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+.TopRightLinks a {
+  color: white;
+  text-decoration: none;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.TopRightLinks a:visited {
+  color: white;
+}

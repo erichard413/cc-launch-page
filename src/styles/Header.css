@@ -1,0 +1,15 @@
+.Header {
+  width: 100%;
+  display: flex;
+  text-align: left;
+  /* outline: 1px solid black; */
+  /* padding-top: 1rem;
+  padding-bottom: 1rem; */
+}
+.Header img {
+  padding-top: 2rem;
+}
+#links-container {
+  text-align: right;
+  width: 100%;
+}
