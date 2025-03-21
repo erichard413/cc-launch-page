@@ -1,0 +1,123 @@
+.Products {
+  max-width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Products > .main-content {
+  display: flex;
+  margin-top: 25px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #c8c8c8;
+  min-height: 400px;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px #888;
+  box-shadow: 0 0 5px #888;
+  background-color: #fff;
+  padding: 25px;
+  text-align: left;
+}
+.Products h2 {
+  color: #871d05;
+  font-weight: 200;
+  margin: 0px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.Products .mini-header {
+  color: #0071bc;
+  font-size: 1rem;
+}
+.Products .left-product-links ul {
+  padding-left: 7px;
+}
+.Products .left-product-links li {
+  padding: 0px;
+  list-style: none;
+  margin: 4px;
+  background-color: #387eb7;
+  width: 10vw;
+  color: white;
+  padding: 0.5vw;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+.Products .left-product-links li:hover:not(.active) {
+  background-color: #408ecd;
+}
+.Products .left-product-links {
+  width: 10vw;
+  display: flex;
+}
+.Products .left-product-links .active {
+  background-color: #003e6f;
+}
+/* .Products .left-product-links .active:after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: #003e6f;
+  transform: rotate(45deg);
+  left: 0px;
+} */
+.left-product-links .li-text {
+  display: inline-block;
+  width: 7vw;
+}
+.left-product-links .active-box {
+  display: inline-block;
+  position: relative;
+  height: 15px;
+  width: 15px;
+  background-color: #003e6f;
+  /* background-color: red; */
+  transform: rotate(45deg);
+  left: 2.2vw;
+}
+.AccessCardPage {
+  width: auto;
+}
+.AccessCardPage .access-content-left {
+  display: inline-block;
+  padding-left: 50px;
+  width: 50vw;
+}
+.product-img-div {
+  display: block;
+  width: 16vw;
+  /* top: 200px;
+  right: 17vw; */
+  float: right;
+  margin-right: 50px;
+}
+.product-img-div img {
+  width: 100%;
+}
+.Products table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 70%;
+  text-align: left;
+  border: 0px;
+}
+.Products th {
+  color: white;
+  border: 1px solid #2980c1;
+  background: rgba(41, 128, 193, 1) 100%;
+  padding: 15px;
+  width: 0px;
+}
+.Products td {
+  padding: 10px;
+  border: 1px solid grey;
+}
+.Products tr:nth-child(even) {
+  background-color: rgb(245, 245, 245);
+}
+.Products tr > td:first-of-type {
+  color: #0071bc;
+  font-size: 1rem;
+}

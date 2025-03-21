@@ -7,7 +7,6 @@ body {
   background-size: cover;
   background-position: center top;
   font-size: 14px;
-  overflow-y: hidden;
 }
 .bold-text {
   font-weight: 600;

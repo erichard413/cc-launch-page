@@ -1,5 +1,6 @@
 .Home {
   max-width: 100%;
+  z-index: 1;
 }
 
 .Home > .main-content {
