@@ -4,6 +4,14 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Contact from "./pages/Contact";
 import { Products } from "./pages/Products";
+import ReferenceMaterials from "./pages/ReferenceMaterials";
+
+import { GlobalWorkerOptions } from "pdfjs-dist";
+
+GlobalWorkerOptions.workerSrc = new URL(
+  "pdfjs-dist/build/pdf.worker.min.mjs",
+  import.meta.url
+).toString();
 
 function App() {
   return (
@@ -14,6 +22,7 @@ function App() {
           <Route exact path="/contactus" element={<Contact />} />
           <Route exact path="/products" element={<Products />} />
           <Route exact path="/products/:cardtype" element={<Products />} />
+          <Route exact path="/refmaterial" element={<ReferenceMaterials />} />
         </Routes>
       </div>
       <div id="modal-div"></div>

@@ -1,0 +1,62 @@
+.ReferenceMaterials {
+  max-width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ReferenceMaterials > .main-content {
+  margin-top: 25px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #c8c8c8;
+  min-height: 400px;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px #888;
+  box-shadow: 0 0 5px #888;
+  background-color: #fff;
+  padding: 25px;
+  text-align: left;
+}
+.ReferenceMaterials #right-div + #left-div {
+  display: inline-block;
+}
+.ReferenceMaterials #left-div {
+  width: 80%;
+  padding-right: 30px;
+}
+.ReferenceMaterials #left-div p {
+  padding: 0px;
+  margin: 0px;
+}
+.ReferenceMaterials .top-content {
+  display: flex;
+}
+.ReferenceMaterials h2 {
+  color: #871d05;
+  font-weight: 200;
+  margin: 0px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ReferenceMaterials #right-div img {
+  border: 10px solid #eeeeee;
+  border-radius: 5px;
+  outline: 1px solid #cfcfcf;
+  width: 100%;
+}
+.ReferenceMaterials #right-div {
+  margin-right: 15px;
+}
+.ReferenceMaterials .mini-header {
+  color: #0071bc;
+  font-size: 1rem;
+}
+.ReferenceMaterials a {
+  color: #0c2074;
+  text-decoration: none;
+}
+.ReferenceMaterials a:visited {
+  color: #0c2074;
+  text-decoration: none;
+}

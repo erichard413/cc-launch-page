@@ -24,16 +24,22 @@ export default function NavBar() {
           </ul>
         </li>
 
-        <Link>
-          <li className="nav-list-item">
-            Program Management
-            <ul className="list-item-drop">
-              <li>Marketing Materials</li>
+        <li className="nav-list-item">
+          <Link>Program Management</Link>
+          <ul className="list-item-drop">
+            <li>Marketing Materials</li>
+            <Link to="/refmaterial">
               <li>Reference Materials</li>
+            </Link>
+
+            <Link
+              to="https://convenientcards.com/ccstudio2.html"
+              target="_blank"
+            >
               <li>Card Inventory Orders</li>
-            </ul>
-          </li>
-        </Link>
+            </Link>
+          </ul>
+        </li>
 
         <Link>
           <li className="nav-list-item">
