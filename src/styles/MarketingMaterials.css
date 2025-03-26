@@ -1,0 +1,123 @@
+.MarketingMaterials {
+  max-width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.MarketingMaterials > .main-content {
+  margin-top: 25px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #c8c8c8;
+  min-height: 400px;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px #888;
+  box-shadow: 0 0 5px #888;
+  background-color: #fff;
+  padding: 25px;
+  text-align: left;
+}
+.MarketingMaterials #right-div + #left-div {
+  display: inline-block;
+}
+.MarketingMaterials #left-div {
+  width: 80%;
+  padding-right: 30px;
+}
+.MarketingMaterials #left-div p {
+  padding: 0px;
+  margin: 0px;
+}
+.MarketingMaterials .top-content {
+  display: flex;
+}
+.MarketingMaterials h2 {
+  color: #871d05;
+  font-weight: 200;
+  margin: 0px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 1vw;
+}
+
+.MarketingMaterials #right-div img {
+  border: 10px solid #eeeeee;
+  border-radius: 5px;
+  outline: 1px solid #cfcfcf;
+  width: 100%;
+}
+.MarketingMaterials #right-div {
+  margin-right: 15px;
+}
+.MarketingMaterials .mini-header {
+  color: #0071bc;
+  font-size: 1rem;
+}
+.MarketingMaterials a + a:visited {
+  color: #0c2074;
+  text-decoration: none;
+}
+.MarketingMaterials #grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+}
+.MarketingMaterials .MarketingItemCard {
+  width: auto;
+  display: inline-block;
+  margin: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #c8c8c8;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px #888;
+  box-shadow: 0 0 5px #888;
+  background-color: #fff;
+}
+.MarketingItemCard-img-div {
+  width: 150px;
+  height: 150px;
+
+  float: left;
+  margin-right: 20px;
+}
+.MarketingItemCard-img-div img {
+  width: 150px;
+}
+.MarketingItemCard-right-div p {
+  font-size: 0.9rem;
+}
+.MarketingItemCard-right-div .mini-header {
+  font-size: 0.9rem;
+}
+.MarketingItemCard h4 {
+  color: #0071bc;
+  font-size: 1.1rem;
+}
+.MarketingItemCard:hover {
+  -moz-box-shadow: 0 0 5px #2980c1;
+  -webkit-box-shadow: 0 0 5px #2980c1;
+  box-shadow: 0 0 5px #2980c1;
+}
+.MarketingMaterials h3 {
+  padding-left: 1vw;
+  font-size: 1.1rem;
+}
+.marketing-selector-div {
+  padding-left: 1vw;
+}
+.marketing-selector-div select {
+  height: 30px;
+  border-radius: 5px;
+  padding-right: 2vw;
+  margin-right: 1vw;
+}
+.marketing-selector-div label {
+  font-size: 1.05rem;
+  padding-right: 5px;
+}

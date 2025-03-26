@@ -60,3 +60,35 @@
   color: #0c2074;
   text-decoration: none;
 }
+.ReferenceMaterials li {
+  color: #0c2074;
+  cursor: pointer;
+}
+.ReferenceMaterials li {
+  /* list-style-image: url("../assets/pdf-icon.png"); */
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.ReferenceMaterials .li-pdf::before {
+  content: "";
+  display: inline-block;
+  height: 30px;
+  width: 25px;
+  background-image: url("../assets/pdf-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px;
+  padding-right: 20px;
+}
+.ReferenceMaterials .li-excel::before {
+  content: "";
+  display: inline-block;
+  height: 30px;
+  width: 25px;
+  background-image: url("../assets/excel-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px;
+  padding-right: 20px;
+}

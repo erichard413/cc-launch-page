@@ -27,7 +27,10 @@ export default function NavBar() {
         <li className="nav-list-item">
           <Link>Program Management</Link>
           <ul className="list-item-drop">
-            <li>Marketing Materials</li>
+            <Link to="/marketing">
+              <li>Marketing Materials</li>
+            </Link>
+
             <Link to="/refmaterial">
               <li>Reference Materials</li>
             </Link>

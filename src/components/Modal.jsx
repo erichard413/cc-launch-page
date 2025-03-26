@@ -10,6 +10,7 @@ import {
 import "../styles/modals/Modal.css";
 import { useNavigate } from "react-router-dom";
 import { createPortal } from "react-dom";
+import { useMemo } from "react";
 
 function Modal({
   setModalState,
@@ -61,6 +62,7 @@ function Modal({
               }
             }}
           ></div>
+
           {Children.map(children, child => {
             if (!isValidElement(child)) return null;
             return cloneElement(child, {
