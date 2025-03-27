@@ -3,6 +3,8 @@ import "../styles/MarketingMaterials.css";
 import { useState } from "react";
 import { marketingMaterials } from "../assets/data/marketing-data";
 import MarketingSelection from "../components/MarketingSelection";
+import MarketingContentModal from "../components/Modals/Content/MarketingContentModal";
+import Modal from "../components/Modal";
 
 export default function MarketingMaterials() {
   const [data, setData] = useState({ posters: marketingMaterials.posters });
@@ -101,6 +103,7 @@ export default function MarketingMaterials() {
 }
 
 function MarketingItemCard({ item }) {
+  const [modalState, setModalState] = useState(false);
   return (
     <div className="MarketingItemCard">
       <h4>{item.name}</h4>
@@ -120,9 +123,15 @@ function MarketingItemCard({ item }) {
             <br />
             <span className="mini-header">File Type:</span> {item.fileType}
           </p>
-          <button>View</button>
+        </div>
+        <div className="view-btn-div">
+          <button onClick={() => setModalState(true)}>View</button>
         </div>
       </div>
+
+      <Modal modalState={modalState} setModalState={setModalState}>
+        <MarketingContentModal item={item} modalState={modalState} />
+      </Modal>
     </div>
   );
 }

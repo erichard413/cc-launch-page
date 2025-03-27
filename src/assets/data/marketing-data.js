@@ -149,6 +149,7 @@ export const marketingMaterials = {
       category: "general use",
       cardType: "gift",
       previewImg: img9,
+      youtubeId: "K6w1qHOpftA?si=fGDh1x-C8tteao97",
     },
     {
       id: 10,
@@ -161,6 +162,7 @@ export const marketingMaterials = {
       category: "holiday",
       cardType: "gift",
       previewImg: img10,
+      youtubeId: "uBEh25lkTMA?si=jq-nigP8HUNYIKQr",
     },
     {
       id: 11,
@@ -173,11 +175,12 @@ export const marketingMaterials = {
       category: "general use",
       cardType: "access",
       previewImg: img11,
+      youtubeId: "KuuF6uxcRD8?si=kv24t6kNlCsZ9GOA",
     },
     {
       id: 39,
       name: "Spring Break from Convenient Cards",
-      url: "https://youtu.be/595j50Od85E?si=ruoQuWBcdKH7SeDh",
+      url: "https://www.youtube.com/watch?v=595j50Od85E",
       description:
         "This YouTube video can be shared across your digital social media channels to drive sales.",
       fileType: "YouTube video",
@@ -185,6 +188,7 @@ export const marketingMaterials = {
       category: "general use",
       cardType: "access",
       previewImg: img39,
+      youtubeId: "595j50Od85E?si=G9amb7KiqyhUm8Va",
     },
   ],
   socialMediaContent: [
@@ -212,18 +216,7 @@ export const marketingMaterials = {
       cardType: "gift",
       previewImg: img13,
     },
-    {
-      id: 14,
-      name: "Graduation Gift Spinner Video",
-      url: "https://convenientcards.com/CCStudio/marketing/Graduation-Spinner.m4v",
-      description:
-        "This graduation themed Gift Card video can be shared and easily uploaded to your bank social media.",
-      fileType: "m4v",
-      type: "social media video",
-      category: "graduation",
-      cardType: "gift",
-      previewImg: img14,
-    },
+
     {
       id: 15,
       name: "Gift Card Holiday - A Gift For You",
@@ -352,7 +345,7 @@ export const marketingMaterials = {
     },
     {
       id: 26,
-      name: "Online Privacy",
+      name: "Online Privacy Video",
       url: "https://convenientcards.com/CCStudio/marketing/OnlinePrivacy.m4v",
       description: `This video can be easily downloaded and shared through your bank social media channels to drive sales.`,
       fileType: "m4v",
@@ -360,10 +353,24 @@ export const marketingMaterials = {
       category: "general use",
       cardType: "all",
       previewImg: img26,
+      youtubeId: "K6w1qHOpftA?si=_rfjcHeR80rSLzZ3",
+    },
+    {
+      id: 14,
+      name: "Graduation Gift Spinner Video",
+      url: "https://convenientcards.com/CCStudio/marketing/Graduation-Spinner.m4v",
+      description:
+        "This graduation themed Gift Card video can be shared and easily uploaded to your bank social media.",
+      fileType: "m4v",
+      type: "social media video",
+      category: "graduation",
+      cardType: "gift",
+      previewImg: img14,
+      youtubeId: "VJo0815akxk?si=Z7Wy67C50_lo84xu",
     },
     {
       id: 27,
-      name: "Perfect Gift: Christmas",
+      name: "Perfect Gift: Christmas Video",
       url: "https://convenientcards.com/CCStudio/marketing/OnlinePrivacy.m4v",
       description: `This video can be easily downloaded and shared through your bank social media channels to drive sales.`,
       fileType: "m4v",
@@ -371,10 +378,11 @@ export const marketingMaterials = {
       category: "holiday",
       cardType: "gift",
       previewImg: img27,
+      youtubeId: "jC17NGeJdNI?si=0fjlYzum2uTSwr1v",
     },
     {
       id: 28,
-      name: "Perfect Gift: Classic Gift Card Spinner",
+      name: "Perfect Gift: Classic Gift Card Spinner Video",
       url: "https://convenientcards.com/CCStudio/marketing/Classicgiftholidayspinner.m4v",
       description: `This video can be easily downloaded and shared through your bank social media channels to drive sales.`,
       fileType: "m4v",
@@ -382,10 +390,11 @@ export const marketingMaterials = {
       category: "holiday",
       cardType: "gift",
       previewImg: img28,
+      youtubeId: "w3RSoyQwSdE?si=atVQcQafBX9FTP0J",
     },
     {
       id: 29,
-      name: "Perfect Gift: Formal Gift Card Spinner",
+      name: "Perfect Gift: Formal Gift Card Spinner Video",
       url: "https://convenientcards.com/CCStudio/marketing/Formal-Christmasspinner.m4v",
       description: `This video can be easily downloaded and shared through your bank social media channels to drive sales.`,
       fileType: "m4v",
@@ -393,6 +402,7 @@ export const marketingMaterials = {
       category: "holiday",
       cardType: "gift",
       previewImg: img29,
+      youtubeId: "gdgOZnS3HIc?si=G8mQlFJHiuQSmmLM",
     },
   ],
   websiteContent: [

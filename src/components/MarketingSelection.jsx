@@ -3,7 +3,6 @@ import { marketingMaterials } from "../assets/data/marketing-data";
 
 export default function MarketingSelection({ data, setData }) {
   const [selectedContentType, setSelectedContentType] = useState("");
-  console.log(data);
 
   const handleChange = event => {
     setSelectedContentType(event.target.value);

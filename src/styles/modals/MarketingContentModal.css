@@ -1,0 +1,17 @@
+.MarketingContentModal {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70vw !important;
+}
+
+.MarketingContentModal h2 {
+  display: inline-block;
+  color: #871d05;
+  font-weight: 200;
+}
+.MarketingContentModal p {
+  text-align: left;
+}
+.MarketingContentModal h4 {
+  color: #468fcb;
+  font-weight: 600;
+}

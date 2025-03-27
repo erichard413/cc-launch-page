@@ -64,6 +64,7 @@
 }
 .MarketingMaterials .MarketingItemCard {
   width: auto;
+  height: auto;
   display: inline-block;
   margin: 10px;
   padding-top: 20px;
@@ -82,7 +83,6 @@
 .MarketingItemCard-img-div {
   width: 150px;
   height: 150px;
-
   float: left;
   margin-right: 20px;
 }
@@ -120,4 +120,8 @@
 .marketing-selector-div label {
   font-size: 1.05rem;
   padding-right: 5px;
+}
+.MarketingMaterials .view-btn-div {
+  display: inline-block;
+  padding-top: 10px;
 }

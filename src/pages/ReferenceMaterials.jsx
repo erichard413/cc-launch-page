@@ -3,7 +3,7 @@ import React from "react";
 import "../styles/ReferenceMaterials.css";
 import Modal from "../components/Modal";
 import { useState, useCallback } from "react";
-import RefMaterialsModal from "../components/Modals/Content/RefMaterialsModal";
+import PdfModal from "../components/Modals/PdfModal";
 
 export default function ReferenceMaterials() {
   const [modalState, setModalState] = useState(false);
@@ -13,7 +13,7 @@ export default function ReferenceMaterials() {
     setPdfUrl(url);
     setModalState(true);
   }, []);
-  const RefModalMemo = React.memo(RefMaterialsModal);
+  const PdfMemoModal = React.memo(PdfModal);
 
   return (
     <div className="ReferenceMaterials">
@@ -160,7 +160,7 @@ export default function ReferenceMaterials() {
         </div>
       </div>
       <Modal modalState={modalState} setModalState={setModalState}>
-        <RefModalMemo pdfUrl={pdfUrl} isOpen={modalState} />
+        <PdfMemoModal item={{ url: pdfUrl }} isOpen={modalState} />
       </Modal>
     </div>
   );
