@@ -26,21 +26,18 @@ export function Products() {
               className={cardtype == "access" ? "active" : ""}
             >
               <span className="li-text">Access Cards</span>
-              {cardtype == "access" && <div className="active-box"></div>}
             </li>
             <li
               onClick={() => navigate("/products/gift")}
               className={cardtype == "gift" ? "active" : ""}
             >
               <span className="li-text">Gift Cards</span>
-              {cardtype == "gift" && <div className="active-box"></div>}
             </li>
             <li
               onClick={() => navigate(`/products/incentive`)}
               className={cardtype == "incentive" ? "active" : ""}
             >
               <span className="li-text">Incentive Cards</span>
-              {cardtype == "incentive" && <div className="active-box"></div>}
             </li>
           </ul>
         </div>

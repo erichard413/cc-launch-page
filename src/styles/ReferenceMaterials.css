@@ -3,6 +3,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 .ReferenceMaterials > .main-content {
+  display: flex;
   margin-top: 25px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -15,6 +16,9 @@
   background-color: #fff;
   padding: 25px;
   text-align: left;
+}
+.ReferenceMaterials .content-right-div {
+  width: 100%;
 }
 .ReferenceMaterials #right-div + #left-div {
   display: inline-block;

@@ -1,7 +1,5 @@
 import "../../../styles/modals/MarketingContentModal.css";
-import { Document, Page } from "react-pdf";
-import { useMemo } from "react";
-import { useState } from "react";
+
 import PdfModal from "../PdfModal";
 import { Link } from "react-router-dom";
 
@@ -29,7 +27,7 @@ export default function MarketingContentModal({
 function ImgModal({ item, handleClose }) {
   return (
     <div>
-      <img src={item.url} alt={`${item.name}`} />
+      <img src={item.url} alt={`${item.name}`} style={{ maxWidth: "500px" }} />
       <div className="modal-btns">
         <Link to={item.url} target="_blank">
           <button>Download</button>

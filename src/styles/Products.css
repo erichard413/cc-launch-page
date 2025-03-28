@@ -37,12 +37,11 @@
   list-style: none;
   margin: 4px;
   background-color: #387eb7;
-  width: 10vw;
+  width: 9vw;
   color: white;
   padding: 0.5vw;
   cursor: pointer;
   border-radius: 5px;
-  width: 100%;
 }
 .Products .left-product-links li:hover:not(.active) {
   background-color: #408ecd;

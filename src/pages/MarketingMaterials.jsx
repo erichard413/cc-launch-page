@@ -5,6 +5,7 @@ import { marketingMaterials } from "../assets/data/marketing-data";
 import MarketingSelection from "../components/MarketingSelection";
 import MarketingContentModal from "../components/Modals/Content/MarketingContentModal";
 import Modal from "../components/Modal";
+import ProgramManagement from "./ProgramManagement";
 
 export default function MarketingMaterials() {
   const [data, setData] = useState({ posters: marketingMaterials.posters });
@@ -12,91 +13,94 @@ export default function MarketingMaterials() {
   return (
     <div className="MarketingMaterials">
       <div className="main-content">
-        <h2>Marketing Materials</h2>{" "}
-        <div id="filters-div">
-          <MarketingSelection data={data} setData={setData} />
+        <ProgramManagement></ProgramManagement>
+        <div>
+          <h2>Marketing Materials</h2>{" "}
+          <div id="filters-div">
+            <MarketingSelection data={data} setData={setData} />
+          </div>
+          {data && (
+            <>
+              {data.posters && (
+                <>
+                  <h3>Posters</h3>
+                  <div id="grid-container">
+                    {data.posters &&
+                      data.posters.map(d => (
+                        <MarketingItemCard key={d.id} item={d} />
+                      ))}
+                  </div>
+                </>
+              )}
+              {data.videos && (
+                <>
+                  <h3>Videos</h3>
+                  <div id="grid-container">
+                    {data.videos &&
+                      data.videos.map(d => (
+                        <MarketingItemCard key={d.id} item={d} />
+                      ))}
+                  </div>
+                </>
+              )}
+              {data.socialMediaContent && (
+                <>
+                  <h3>Social Media Content</h3>{" "}
+                  <div id="grid-container">
+                    {data.socialMediaContent &&
+                      data.socialMediaContent.map(d => (
+                        <MarketingItemCard key={d.id} item={d} />
+                      ))}
+                  </div>
+                </>
+              )}
+              {data.websiteContent && (
+                <>
+                  <h3>Website Content</h3>{" "}
+                  <div id="grid-container">
+                    {data.websiteContent &&
+                      data.websiteContent.map(d => (
+                        <MarketingItemCard key={d.id} item={d} />
+                      ))}
+                  </div>
+                </>
+              )}
+              {data.statementStuffers && (
+                <>
+                  <h3>Statement Stuffers</h3>
+                  <div id="grid-container">
+                    {data.statementStuffers &&
+                      data.statementStuffers.map(d => (
+                        <MarketingItemCard key={d.id} item={d} />
+                      ))}
+                  </div>
+                </>
+              )}
+              {data.brochures && (
+                <>
+                  <h3>Brochures</h3>
+                  <div id="grid-container">
+                    {data.brochures &&
+                      data.brochures.map(d => (
+                        <MarketingItemCard key={d.id} item={d} />
+                      ))}
+                  </div>
+                </>
+              )}
+              {data.printReadyContent && (
+                <>
+                  <h3>Print Ready Content</h3>
+                  <div id="grid-container">
+                    {data.printReadyContent &&
+                      data.printReadyContent.map(d => (
+                        <MarketingItemCard key={d.id} item={d} />
+                      ))}
+                  </div>
+                </>
+              )}
+            </>
+          )}
         </div>
-        {data && (
-          <>
-            {data.posters && (
-              <>
-                <h3>Posters</h3>
-                <div id="grid-container">
-                  {data.posters &&
-                    data.posters.map(d => (
-                      <MarketingItemCard key={d.id} item={d} />
-                    ))}
-                </div>
-              </>
-            )}
-            {data.videos && (
-              <>
-                <h3>Videos</h3>
-                <div id="grid-container">
-                  {data.videos &&
-                    data.videos.map(d => (
-                      <MarketingItemCard key={d.id} item={d} />
-                    ))}
-                </div>
-              </>
-            )}
-            {data.socialMediaContent && (
-              <>
-                <h3>Social Media Content</h3>{" "}
-                <div id="grid-container">
-                  {data.socialMediaContent &&
-                    data.socialMediaContent.map(d => (
-                      <MarketingItemCard key={d.id} item={d} />
-                    ))}
-                </div>
-              </>
-            )}
-            {data.websiteContent && (
-              <>
-                <h3>Website Content</h3>{" "}
-                <div id="grid-container">
-                  {data.websiteContent &&
-                    data.websiteContent.map(d => (
-                      <MarketingItemCard key={d.id} item={d} />
-                    ))}
-                </div>
-              </>
-            )}
-            {data.statementStuffers && (
-              <>
-                <h3>Statement Stuffers</h3>
-                <div id="grid-container">
-                  {data.statementStuffers &&
-                    data.statementStuffers.map(d => (
-                      <MarketingItemCard key={d.id} item={d} />
-                    ))}
-                </div>
-              </>
-            )}
-            {data.brochures && (
-              <>
-                <h3>Brochures</h3>
-                <div id="grid-container">
-                  {data.brochures &&
-                    data.brochures.map(d => (
-                      <MarketingItemCard key={d.id} item={d} />
-                    ))}
-                </div>
-              </>
-            )}
-            {data.printReadyContent && (
-              <>
-                <h3>Print Ready Content</h3>
-                <div id="grid-container">
-                  {data.printReadyContent &&
-                    data.printReadyContent.map(d => (
-                      <MarketingItemCard key={d.id} item={d} />
-                    ))}
-                </div>
-              </>
-            )}
-          </>
-        )}
       </div>
     </div>
   );

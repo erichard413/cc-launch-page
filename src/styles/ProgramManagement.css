@@ -1,0 +1,53 @@
+.ProgramManagement {
+  max-width: 40%;
+  padding-right: 20px;
+  display: inline-block;
+}
+
+.ProgramManagement .left-product-links ul {
+  padding-left: 7px;
+}
+.ProgramManagement .left-product-links li {
+  padding: 0px;
+  list-style: none;
+  margin: 4px;
+  background-color: #387eb7;
+  width: 10vw;
+  color: white;
+  padding: 0.5vw;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.ProgramManagement .left-product-links li:hover:not(.active) {
+  background-color: #408ecd;
+}
+.ProgramManagement .left-product-links {
+  width: 12vw;
+  display: flex;
+}
+.ProgramManagement .left-product-links .active {
+  background-color: #003e6f;
+}
+/* .ProgramManagement .left-product-links .active:after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #003e6f;
+    transform: rotate(45deg);
+    left: 0px;
+  } */
+.left-product-links .li-text {
+  display: inline-block;
+  width: auto;
+}
+.left-product-links .active-box {
+  display: inline-block;
+  position: relative;
+  height: 15px;
+  width: 15px;
+  background-color: #003e6f;
+  /* background-color: red; */
+  transform: rotate(45deg);
+  left: 2.2vw;
+}
