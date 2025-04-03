@@ -1,5 +1,4 @@
 import "./App.css";
-import NavBar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Contact from "./pages/Contact";
@@ -8,6 +7,8 @@ import ReferenceMaterials from "./pages/ReferenceMaterials";
 
 import { GlobalWorkerOptions } from "pdfjs-dist";
 import MarketingMaterials from "./pages/MarketingMaterials";
+import Training from "./pages/Training";
+import { FAQ } from "./pages/FAQ";
 
 GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.mjs",
@@ -25,6 +26,9 @@ function App() {
           <Route exact path="/products/:cardtype" element={<Products />} />
           <Route exact path="/refmaterial" element={<ReferenceMaterials />} />
           <Route exact path="/marketing" element={<MarketingMaterials />} />
+          <Route exact path="/training" element={<Training />} />
+          <Route exact path="/FAQ" element={<FAQ />} />
+          <Route exact path="/FAQ/:cardtype" element={<FAQ />} />
         </Routes>
       </div>
       <div id="modal-div"></div>

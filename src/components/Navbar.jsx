@@ -5,9 +5,10 @@ export default function NavBar() {
   return (
     <div className="nav">
       <ul className="nav-list">
-        <Link to="/">
-          <li className="nav-list-item">Home</li>
-        </Link>
+        <li className="nav-list-item">
+          {" "}
+          <Link to="/">Home</Link>
+        </li>
 
         <li className="nav-list-item">
           <Link to="/products/access">Products</Link>
@@ -44,23 +45,31 @@ export default function NavBar() {
           </ul>
         </li>
 
-        <Link>
-          <li className="nav-list-item">
-            FAQs
-            <ul className="list-item-drop">
-              <li>Access Card Transactions</li>
-              <li>Gift Card Transactions</li>
-              <li>Incentive Card Transactions</li>
-            </ul>
-          </li>
-        </Link>
-        <Link>
-          <li className="nav-list-item">Training</li>
-        </Link>
+        <li className="nav-list-item">
+          <Link to="/FAQ/access">FAQs</Link>
 
-        <Link to="/contactus" className="last-nav">
-          <li className="nav-list-item">Contact Us</li>
-        </Link>
+          <ul className="list-item-drop">
+            <li>
+              <Link to="/FAQ/access">Access Card Transactions</Link>
+            </li>
+            <li>
+              <Link to="/FAQ/gift">Gift Card Transactions</Link>
+            </li>
+            <li>
+              <Link to="/FAQ/incentive">Incentive Card Transactions</Link>
+            </li>
+          </ul>
+        </li>
+
+        <li className="nav-list-item">
+          <Link to="/training">Training </Link>
+        </li>
+
+        <li className="nav-list-item">
+          <Link to="/contactus" className="last-nav">
+            Contact Us
+          </Link>
+        </li>
       </ul>
     </div>
   );

@@ -1,0 +1,87 @@
+.Training {
+  max-width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Training > .main-content {
+  margin-top: 25px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #c8c8c8;
+  min-height: 400px;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px #888;
+  box-shadow: 0 0 5px #888;
+  background-color: #fff;
+  padding: 25px;
+  text-align: left;
+}
+.Training #right-div + #left-div {
+  display: inline-block;
+}
+.Training #left-div {
+  width: 80%;
+  padding-right: 30px;
+}
+.Training #left-div p {
+  padding: 0px;
+  margin: 0px;
+}
+.Training .top-content {
+  display: flex;
+}
+.Training h2 {
+  color: #871d05;
+  font-weight: 200;
+  margin: 0px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.Training #right-div img {
+  border: 10px solid #eeeeee;
+  border-radius: 5px;
+  outline: 1px solid #cfcfcf;
+  width: 100%;
+}
+.Training #right-div {
+  margin-right: 15px;
+}
+.Training .mini-header {
+  color: #0071bc;
+  font-size: 1rem;
+}
+.Training a + a:visited {
+  color: #0c2074;
+  text-decoration: none;
+}
+
+#training-list {
+  list-style: none;
+  text-align: left;
+}
+#training-list li {
+  padding: 10px;
+  color: #0c2074;
+  cursor: pointer;
+}
+.training-video-modal {
+  height: 80vh;
+  width: 90vw !important;
+}
+#video-wrapper {
+  text-align: center;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  padding-bottom: 25px;
+}
+#training-video {
+  width: 100%;
+  height: 100%;
+}
+.Training .click-li {
+  color: #0c2074;
+  cursor: pointer;
+}
