@@ -12,7 +12,6 @@ createRoot(document.getElementById("root")).render(
   // <StrictMode>
   <BrowserRouter>
     <Layout>
-      <title>Convenient Cards - CC Studio Card Transactions</title>
       <Header />
       <NavBar />
       <App />

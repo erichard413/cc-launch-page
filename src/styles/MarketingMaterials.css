@@ -125,5 +125,21 @@
 }
 .MarketingMaterials .view-btn-div {
   display: inline-block;
-  padding-top: 10px;
+}
+.MarketingMaterials .content-info {
+  padding-top: 2px;
+}
+.MarketingItemCard .MarketingItemCard-right-div {
+  display: block;
+  min-height: 150px;
+}
+
+@media (max-width: 480px) {
+  .MarketingMaterials .main-content {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .MarketingMaterials #grid-container {
+    display: block;
+  }
 }

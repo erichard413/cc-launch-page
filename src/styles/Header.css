@@ -13,3 +13,18 @@
   text-align: right;
   width: 100%;
 }
+
+@media (max-width: 480px) {
+  .Header {
+    justify-content: center;
+  }
+  .Header img {
+    width: 80vw;
+    padding-left: 10vw;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .Header #links-container {
+    display: none;
+  }
+}

@@ -51,3 +51,42 @@
   transform: rotate(45deg);
   left: 2.2vw;
 }
+
+@media (max-width: 480px) {
+  .ProgramManagement .left-product-links {
+    width: 80vw;
+  }
+  .ProgramManagement > div {
+    display: block;
+    width: 80vw;
+    margin: 0;
+    padding: 0;
+  }
+  .ProgramManagement .left-product-links ul {
+    display: flex;
+    padding: 0;
+    width: 100%;
+  }
+  .ProgramManagement .left-product-links li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 2px;
+    min-width: 95px;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    min-height: 50px;
+  }
+  .ProgramManagement .left-product-links li:first-of-type {
+    margin-left: 0px;
+  }
+  .ProgramManagement .left-product-links li:last-of-type {
+    margin-right: 0px;
+  }
+  .ProgramManagement .left-product-links .li-text {
+    width: 80%;
+  }
+}

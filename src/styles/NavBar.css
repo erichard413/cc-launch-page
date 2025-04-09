@@ -120,3 +120,20 @@
 .nav-list > a.last-nav {
   border-right: 0px;
 }
+@media (max-width: 480px) {
+  .nav {
+    padding: 0px;
+    margin: 0px;
+    left: 0px;
+    width: 100vw;
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  .nav .nav-list-item {
+    width: auto;
+    flex: 1 1 auto;
+  }
+  .nav .list-item-drop {
+    display: none;
+  }
+}

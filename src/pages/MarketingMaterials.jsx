@@ -14,7 +14,7 @@ export default function MarketingMaterials() {
     <div className="MarketingMaterials">
       <div className="main-content">
         <ProgramManagement></ProgramManagement>
-        <div>
+        <div className="marketing-content-div">
           <h2>Marketing Materials</h2>{" "}
           <div id="filters-div">
             <MarketingSelection data={data} setData={setData} />
@@ -117,17 +117,16 @@ function MarketingItemCard({ item }) {
         </div>
         <div className="MarketingItemCard-right-div">
           <p>{item.description}</p>
-          <p>
-            {" "}
-            <span className="mini-header">Card Program:</span>{" "}
-            {item.cardType[0].toUpperCase() + item.cardType.slice(1)}
-            <br />
-            <span className="mini-header">Content Type:</span>{" "}
-            {item.type[0].toUpperCase() + item.type.slice(1)}
-            <br />
-            <span className="mini-header">File Type:</span> {item.fileType}
-          </p>
         </div>
+        <p className="content-info">
+          <span className="mini-header">Card Program:</span>{" "}
+          {item.cardType[0].toUpperCase() + item.cardType.slice(1)}
+          <br />
+          <span className="mini-header">Content Type:</span>{" "}
+          {item.type[0].toUpperCase() + item.type.slice(1)}
+          <br />
+          <span className="mini-header">File Type:</span> {item.fileType}
+        </p>
         <div className="view-btn-div">
           <button onClick={() => setModalState(true)}>View</button>
         </div>

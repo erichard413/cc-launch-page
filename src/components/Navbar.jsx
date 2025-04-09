@@ -67,7 +67,7 @@ export default function NavBar() {
 
         <li className="nav-list-item">
           <Link to="/contactus" className="last-nav">
-            Contact Us
+            Contact
           </Link>
         </li>
       </ul>

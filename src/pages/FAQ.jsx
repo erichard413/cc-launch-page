@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import accesscard from "../assets/AccessCard.png";
 import giftcard from "../assets/GiftCard.png";
 import incentivecard from "../assets/IncentiveCard.png";
+import questions from "../assets/data/faqs.jsx";
 
 import "../styles/FAQ.css";
 
@@ -61,6 +62,9 @@ function AccessFAQ() {
           The Convenient Access Visa® Prepaid Card is a general purpose
           reloadable prepaid card with hundreds of applications.
         </p>
+        {questions.access.map(q => (
+          <Question question={q} key={q.id} />
+        ))}
       </div>
     </div>
   );
@@ -77,6 +81,9 @@ function GiftFAQ() {
           The Convenient Visa® Gift Card is a single load card that is the
           perfect gift for any occasion.
         </p>
+        {questions.gift.map(q => (
+          <Question question={q} key={q.id} />
+        ))}
       </div>
     </div>
   );
@@ -95,6 +102,31 @@ function IncentiveFAQ() {
           The Convenient Visa® Incentive Card is a single-load reward card
           designed for business customers.
         </p>
+        {questions.incentive.map(q => (
+          <Question question={q} key={q.id} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Question({ question }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = () => {
+    setIsOpen(s => !s);
+  };
+  return (
+    <div className="question-answer-div">
+      <div className="question">
+        <p
+          className="mini-header"
+          style={{ cursor: "pointer" }}
+          onClick={handleClick}
+        >
+          {isOpen ? "[-] " : "[+] "}
+          {question.q}
+        </p>
+        {isOpen && <>{question.a}</>}
       </div>
     </div>
   );

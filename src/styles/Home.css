@@ -134,3 +134,32 @@
   border-radius: 5px;
   cursor: pointer;
 }
+/* phone styles */
+@media (max-width: 480px) {
+  .Home .content-div {
+    display: none;
+    margin: 0px;
+  }
+  .Home .top-container {
+    margin: 0px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .Home .bottom-content {
+    display: grid;
+  }
+  .Home .bottom-content > div {
+    width: 70vw;
+    margin-bottom: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .Home .bottom-content button {
+    margin-bottom: 15px;
+  }
+  .Home .bottom-content ul {
+    width: 100%;
+  }
+}
