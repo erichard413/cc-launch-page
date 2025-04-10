@@ -7,6 +7,7 @@ import PrivacyPolicyModal from "./Modals/Content/PrivacyPolicyModal";
 import "../styles/Footer.css";
 import { Link } from "react-router-dom";
 import TosModal from "./Modals/Content/TosModal";
+import noScroll from "../helpers/noScroll";
 
 export default function Footer() {
   const [modalState, setModalState] = useState(false);
@@ -26,9 +27,11 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-nav-div">
-        <Link to="/">Home</Link> |<Link to="/">Products</Link> |
-        <Link to="/">Program Management</Link> |<Link to="/">FAQ</Link> |
-        <Link to="/">Training</Link> |<Link to="/">Contact Us</Link>
+        <Link to="/home">Home</Link> |
+        <Link to="/products/access">Products</Link> |
+        <Link to="/marketing">Program Management</Link> |
+        <Link to="/faq/access">FAQ</Link> |<Link to="/training">Training</Link>{" "}
+        |<Link to="/contactus">Contact Us</Link>
       </div>
       <div className="issuer-statement-div">
         <p>
@@ -42,6 +45,7 @@ export default function Footer() {
           <Link
             onClick={() => {
               setContentState("PP");
+              noScroll(true);
               setModalState(true);
             }}
           >
@@ -51,6 +55,7 @@ export default function Footer() {
           <Link
             onClick={() => {
               setContentState("TS");
+              noScroll(true);
               setModalState(true);
             }}
           >

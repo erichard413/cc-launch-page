@@ -134,12 +134,17 @@
   min-height: 150px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 992px) {
   .MarketingMaterials .main-content {
     justify-content: center;
     flex-direction: column;
   }
   .MarketingMaterials #grid-container {
     display: block;
+  }
+}
+@media (max-width: 711px) {
+  .MarketingContentModal img {
+    width: 50%;
   }
 }

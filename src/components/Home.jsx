@@ -8,7 +8,7 @@ import Modal from "./Modal";
 import { ContentModal } from "./Modals/ContentModal";
 import CompareGiftIncentiveModal from "./Modals/Content/CompareGiftIncentiveModal";
 import SolutionGuideModal from "./Modals/Content/SolutionGuideModal";
-import PrivacyPolicyModal from "./Modals/Content/PrivacyPolicyModal";
+import noScroll from "../helpers/noScroll";
 
 export default function Home() {
   const [modalState, setModalState] = useState(false);
@@ -48,8 +48,10 @@ export default function Home() {
               <li>Incentive Card</li>
             </ul>
             <button
-              onClick={() => {
+              onClick={e => {
+                e.preventDefault();
                 setContentState("GI");
+                noScroll(true);
                 setModalState(true);
               }}
             >
@@ -63,8 +65,10 @@ export default function Home() {
               <li>Select Matching Product</li>
             </ul>
             <button
-              onClick={() => {
+              onClick={e => {
+                e.preventDefault();
                 setContentState("SG");
+                noScroll(true);
                 setModalState(true);
               }}
             >

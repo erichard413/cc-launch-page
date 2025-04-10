@@ -18,6 +18,9 @@
   cursor: pointer;
   border-radius: 5px;
 }
+.ProgramManagement a {
+  color: white;
+}
 .ProgramManagement .left-product-links li:hover:not(.active) {
   background-color: #408ecd;
 }
@@ -52,7 +55,7 @@
   left: 2.2vw;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 992px) {
   .ProgramManagement .left-product-links {
     width: 80vw;
   }
@@ -75,10 +78,9 @@
     margin: 2px;
     min-width: 95px;
     width: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-align: center;
-    min-height: 50px;
   }
   .ProgramManagement .left-product-links li:first-of-type {
     margin-left: 0px;

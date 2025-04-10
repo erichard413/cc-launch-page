@@ -135,7 +135,7 @@
   cursor: pointer;
 }
 /* phone styles */
-@media (max-width: 480px) {
+@media (max-width: 674px) {
   .Home .content-div {
     display: none;
     margin: 0px;

@@ -1,7 +1,7 @@
 import "../../styles/modals/PdfModal.css";
 import { Document, Page } from "react-pdf";
 import { useMemo } from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 import { Link } from "react-router-dom";
 import "react-pdf/dist/Page/AnnotationLayer.css";
@@ -10,7 +10,13 @@ import "react-pdf/dist/Page/TextLayer.css";
 function PdfModal({ item, isOpen, handleClose }) {
   const [numPages, setNumPages] = useState();
   const [pageNumber, setPageNumber] = useState(1);
+  const [scale, setScale] = useState();
   const file = useMemo(() => ({ url: item.url }), [item]);
+
+  useEffect(() => {
+    let s = window.innerWidth <= 635 ? 0.45 : 0.75;
+    setScale(s);
+  });
 
   const changePage = amount => {
     if (amount < 0 && pageNumber == 1) return;
@@ -35,7 +41,7 @@ function PdfModal({ item, isOpen, handleClose }) {
   const nextButtonStatus = pageNumber + 1 <= numPages ? false : true;
 
   return (
-    <div className="PdfModal ">
+    <div className="PdfModal modal-body">
       {isOpen && (
         <>
           <Document
@@ -43,7 +49,7 @@ function PdfModal({ item, isOpen, handleClose }) {
             options={options}
             onLoadSuccess={onDocumentLoadSuccess}
           >
-            <Page pageNumber={pageNumber} scale={0.75} />
+            <Page pageNumber={pageNumber} scale={scale} />
           </Document>
         </>
       )}

@@ -2,6 +2,7 @@ import "../../../styles/modals/MarketingContentModal.css";
 
 import PdfModal from "../PdfModal";
 import { Link } from "react-router-dom";
+import noScroll from "../../../helpers/noScroll";
 
 export default function MarketingContentModal({
   item,
@@ -35,6 +36,7 @@ function ImgModal({ item, handleClose }) {
 
         <button
           onClick={() => {
+            noScroll(false);
             handleClose();
           }}
         >
@@ -46,11 +48,14 @@ function ImgModal({ item, handleClose }) {
 }
 
 function VideoModal({ item, handleClose }) {
+  const screenW = window.innerWidth;
+  const height = window.innerWidth <= 480 ? "150" : "315";
+  const width = window.innerWidth <= 480 ? "267" : "560";
   return (
     <div>
       <iframe
-        width="560"
-        height="315"
+        width={width}
+        height={height}
         src={`https://www.youtube.com/embed/${item.youtubeId}`}
         title="YouTube video player"
         frameborder="0"
@@ -67,6 +72,7 @@ function VideoModal({ item, handleClose }) {
 
         <button
           onClick={() => {
+            noScroll(false);
             handleClose();
           }}
         >

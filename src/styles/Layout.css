@@ -3,7 +3,7 @@
   width: 75vw;
   margin: auto;
 }
-@media (max-width: 480px) {
+@media (max-width: 674px) {
   .Layout {
     max-width: 90vw;
     width: 90vw;

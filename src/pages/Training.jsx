@@ -2,6 +2,7 @@ import "../styles/Training.css";
 import Modal from "../components/Modal";
 import { useState } from "react";
 import PdfModal from "../components/Modals/PdfModal";
+import noScroll from "../helpers/noScroll";
 
 export default function Training() {
   const [modalVideoState, setModalVideoState] = useState(false);
@@ -9,15 +10,18 @@ export default function Training() {
   const [selectedVideo, setSelectedVideo] = useState("");
 
   const handleVideoClick = videoId => {
+    noScroll(true);
     setSelectedVideo(videoId);
     setModalVideoState(true);
   };
 
   const handleVideoClose = () => {
+    noScroll(true);
     setModalVideoState(false);
   };
 
   const handlePdfClose = () => {
+    noScroll(false);
     setModalPdfState(false);
   };
   return (
@@ -30,7 +34,13 @@ export default function Training() {
               <span className="mini-header">Manuals</span> <br />
             </p>{" "}
             <ul>
-              <li className="click-li" onClick={() => setModalPdfState(true)}>
+              <li
+                className="click-li"
+                onClick={() => {
+                  noScroll(true);
+                  setModalPdfState(true);
+                }}
+              >
                 CC Studio Training Manual
               </li>
             </ul>
@@ -119,17 +129,16 @@ export default function Training() {
           <VideoModal videoId={selectedVideo} handleClose={handleVideoClose} />
         )}
       </Modal>
-      {modalPdfState && (
-        <Modal modalState={modalPdfState} setModalState={setModalPdfState}>
-          <PdfModal
-            item={{
-              url: "https://convenientcards.com/CCStudio/training/CC_Studio_Training_Manual.pdf",
-            }}
-            isOpen={modalPdfState}
-            handleClose={handlePdfClose}
-          />
-        </Modal>
-      )}
+
+      <Modal modalState={modalPdfState} setModalState={setModalPdfState}>
+        <PdfModal
+          item={{
+            url: "https://convenientcards.com/CCStudio/training/CC_Studio_Training_Manual.pdf",
+          }}
+          isOpen={modalPdfState}
+          handleClose={handlePdfClose}
+        />
+      </Modal>
     </div>
   );
 }

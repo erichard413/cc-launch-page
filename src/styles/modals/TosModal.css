@@ -27,3 +27,22 @@
 .TosModal li {
   padding-left: 15px;
 }
+@media (min-width: 481px) and (max-width: 1460px) {
+  .TosModal {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 481px) {
+  .TosModal {
+    font-size: 0.4rem;
+    width: 90vw;
+    padding: 1px;
+    margin: 0;
+  }
+  .modal-body {
+    width: 90% !important;
+  }
+  .TosModal li {
+    width: 70vw;
+  }
+}

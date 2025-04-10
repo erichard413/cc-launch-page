@@ -1,7 +1,4 @@
-import { useSearchParams, useParams, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "../styles/ProgramManagement.css";
 
 export default function ProgramManagement() {
@@ -24,15 +21,14 @@ export default function ProgramManagement() {
               onClick={() => navigate("/refmaterial")}
             >
               <span className="li-text">Reference Material</span>
-              {/* {cardtype == "gift" && <div className="active-box"></div>} */}
             </li>
-            <li
-              onClick={() =>
-                navigate(`https://convenientcards.com/ccstudio2.html`)
-              }
-            >
-              <span className="li-text">Card Inventory Orders</span>
-              {/* {cardtype == "incentive" && <div className="active-box"></div>} */}
+            <li>
+              <a
+                href="https://convenientcards.com/ccstudio2.html"
+                target="_blank"
+              >
+                <span className="li-text">Card Inventory Orders</span>
+              </a>
             </li>
           </ul>
         </div>

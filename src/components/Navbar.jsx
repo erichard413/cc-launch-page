@@ -49,15 +49,18 @@ export default function NavBar() {
           <Link to="/FAQ/access">FAQs</Link>
 
           <ul className="list-item-drop">
-            <li>
-              <Link to="/FAQ/access">Access Card Transactions</Link>
-            </li>
-            <li>
-              <Link to="/FAQ/gift">Gift Card Transactions</Link>
-            </li>
-            <li>
-              <Link to="/FAQ/incentive">Incentive Card Transactions</Link>
-            </li>
+            <Link to="/FAQ/access">
+              <li>Access Card Transactions</li>
+            </Link>
+
+            <Link to="/FAQ/gift">
+              {" "}
+              <li>Gift Card Transactions</li>
+            </Link>
+
+            <Link to="/FAQ/incentive">
+              <li>Incentive Card Transactions</li>
+            </Link>
           </ul>
         </li>
 

@@ -120,7 +120,7 @@
 .nav-list > a.last-nav {
   border-right: 0px;
 }
-@media (max-width: 480px) {
+@media (max-width: 674px) {
   .nav {
     padding: 0px;
     margin: 0px;
@@ -134,6 +134,9 @@
     flex: 1 1 auto;
   }
   .nav .list-item-drop {
+    display: none;
+  }
+  .nav-list-item:hover::after {
     display: none;
   }
 }

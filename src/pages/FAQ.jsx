@@ -123,7 +123,7 @@ function Question({ question }) {
           style={{ cursor: "pointer" }}
           onClick={handleClick}
         >
-          {isOpen ? "[-] " : "[+] "}
+          <span className="bold-text">{isOpen ? "[-] " : "[+] "}</span>
           {question.q}
         </p>
         {isOpen && <>{question.a}</>}

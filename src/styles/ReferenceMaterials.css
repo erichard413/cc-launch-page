@@ -96,3 +96,12 @@
   background-size: 22px;
   padding-right: 20px;
 }
+@media (max-width: 992px) {
+  .ReferenceMaterials .main-content {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .ReferenceMaterials img {
+    display: none;
+  }
+}

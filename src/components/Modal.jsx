@@ -10,7 +10,7 @@ import {
 import "../styles/modals/Modal.css";
 import { useNavigate } from "react-router-dom";
 import { createPortal } from "react-dom";
-import { useMemo } from "react";
+import noScroll from "../helpers/noScroll";
 
 function Modal({
   setModalState,
@@ -24,7 +24,8 @@ function Modal({
   const navigate = useNavigate();
   const [isClosing, setIsClosing] = useState(false);
 
-  const handleClose = () => {
+  const handleClose = e => {
+    noScroll(false);
     setModalState(false);
   };
   useEffect(() => {

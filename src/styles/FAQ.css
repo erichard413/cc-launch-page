@@ -121,3 +121,38 @@
   color: #0071bc;
   font-size: 1rem;
 }
+@media (max-width: 480px) {
+  .FAQ .main-content {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .FAQ .left-product-links {
+    display: flex;
+    width: 100%;
+  }
+  .FAQ .left-product-links ul {
+    display: flex;
+  }
+  .FAQ .left-product-links li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    width: 20vw;
+    padding: 5px;
+    text-align: center;
+  }
+  .FAQ .left-product-links .li-text {
+    width: 80%;
+  }
+  .FAQ .product-img-div {
+    width: 100%;
+    margin: auto;
+    padding-left: 0;
+    padding-bottom: 20px;
+  }
+  .FAQ .product-img-div img {
+    padding: 0;
+    margin: 0;
+  }
+}

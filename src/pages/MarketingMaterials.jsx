@@ -6,6 +6,7 @@ import MarketingSelection from "../components/MarketingSelection";
 import MarketingContentModal from "../components/Modals/Content/MarketingContentModal";
 import Modal from "../components/Modal";
 import ProgramManagement from "./ProgramManagement";
+import noScroll from "../helpers/noScroll";
 
 export default function MarketingMaterials() {
   const [data, setData] = useState({ posters: marketingMaterials.posters });
@@ -108,6 +109,10 @@ export default function MarketingMaterials() {
 
 function MarketingItemCard({ item }) {
   const [modalState, setModalState] = useState(false);
+  const handleClick = () => {
+    noScroll(true);
+    setModalState(true);
+  };
   return (
     <div className="MarketingItemCard">
       <h4>{item.name}</h4>
@@ -128,7 +133,7 @@ function MarketingItemCard({ item }) {
           <span className="mini-header">File Type:</span> {item.fileType}
         </p>
         <div className="view-btn-div">
-          <button onClick={() => setModalState(true)}>View</button>
+          <button onClick={() => handleClick()}>View</button>
         </div>
       </div>
 

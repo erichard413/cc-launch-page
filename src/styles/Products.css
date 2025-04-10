@@ -120,19 +120,25 @@
   color: #0071bc;
   font-size: 1rem;
 }
-@media (max-width: 480px) {
+@media (max-width: 674px) {
   .Products .main-content {
     justify-content: center;
     flex-direction: column;
   }
   .Products .left-product-links {
-    display: grid;
+    display: flex;
     width: 100%;
   }
+  .Products .left-product-links ul {
+    display: flex;
+  }
   .Products .left-product-links li {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 5px;
     width: 20vw;
+    padding: 5px;
     text-align: center;
   }
   .Products .left-product-links .li-text {
