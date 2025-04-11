@@ -1,14 +1,20 @@
 import "../../../styles/modals/RefMaterialsModal.css";
 import { Document, Page } from "react-pdf";
 import { Link } from "react-router-dom";
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 
 function RefMaterialsModal({ handleClose, isOpen, pdfUrl }) {
   const [numPages, setNumPages] = useState();
   const [pageNumber, setPageNumber] = useState(1);
+  const [scale, setScale] = useState();
   const file = useMemo(() => ({ url: pdfUrl }), [pdfUrl]);
+
+  useEffect(() => {
+    let s = window.innerWidth <= 635 ? 0.45 : 0.75;
+    setScale(s);
+  });
 
   const changePage = amount => {
     if (amount < 0 && pageNumber == 1) return;
@@ -41,7 +47,7 @@ function RefMaterialsModal({ handleClose, isOpen, pdfUrl }) {
             options={options}
             onLoadSuccess={onDocumentLoadSuccess}
           >
-            <Page pageNumber={pageNumber} />
+            <Page pageNumber={pageNumber} scale={scale} />
           </Document>
         </>
       )}

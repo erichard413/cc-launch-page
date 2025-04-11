@@ -41,7 +41,7 @@ function PdfModal({ item, isOpen, handleClose }) {
   const nextButtonStatus = pageNumber + 1 <= numPages ? false : true;
 
   return (
-    <div className="PdfModal modal-body">
+    <div className="PdfModal">
       {isOpen && (
         <>
           <Document

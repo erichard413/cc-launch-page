@@ -3,6 +3,7 @@ import Modal from "../components/Modal";
 import { useState } from "react";
 import PdfModal from "../components/Modals/PdfModal";
 import noScroll from "../helpers/noScroll";
+import RefMaterialsModal from "../components/Modals/Content/RefMaterialsModal";
 
 export default function Training() {
   const [modalVideoState, setModalVideoState] = useState(false);
@@ -173,13 +174,18 @@ export default function Training() {
       </Modal>
 
       <Modal modalState={modalPdfState} setModalState={setModalPdfState}>
-        <PdfModal
+        <RefMaterialsModal
+          pdfUrl="https://convenientcards.com/CCStudio/training/CC_Studio_Training_Manual.pdf"
+          isOpen={modalPdfState}
+          handleClose={handlePdfClose}
+        />
+        {/* <PdfModal
           item={{
             url: "https://convenientcards.com/CCStudio/training/CC_Studio_Training_Manual.pdf",
           }}
           isOpen={modalPdfState}
           handleClose={handlePdfClose}
-        />
+        /> */}
       </Modal>
     </div>
   );

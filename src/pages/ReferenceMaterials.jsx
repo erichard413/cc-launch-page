@@ -5,6 +5,7 @@ import Modal from "../components/Modal";
 import { useState, useCallback } from "react";
 import PdfModal from "../components/Modals/PdfModal";
 import ProgramManagement from "./ProgramManagement";
+import RefMaterialsModal from "../components/Modals/Content/RefMaterialsModal";
 
 export default function ReferenceMaterials() {
   const [modalState, setModalState] = useState(false);
@@ -14,6 +15,10 @@ export default function ReferenceMaterials() {
     setPdfUrl(url);
     setModalState(true);
   }, []);
+
+  const handleClose = () => {
+    setModalState(false);
+  };
   const PdfMemoModal = React.memo(PdfModal);
 
   return (
@@ -165,7 +170,12 @@ export default function ReferenceMaterials() {
         </div>
       </div>
       <Modal modalState={modalState} setModalState={setModalState}>
-        <PdfMemoModal item={{ url: pdfUrl }} isOpen={modalState} />
+        <RefMaterialsModal
+          pdfUrl={pdfUrl}
+          isOpen={modalState}
+          handleClose={handleClose}
+        />
+        {/* <PdfMemoModal item={{ url: pdfUrl }} isOpen={modalState} /> */}
       </Modal>
     </div>
   );
