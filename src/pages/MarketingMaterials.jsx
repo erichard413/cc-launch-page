@@ -1,12 +1,11 @@
-import { Link } from "react-router-dom";
-import "../styles/MarketingMaterials.css";
 import { useState } from "react";
 import { marketingMaterials } from "../assets/data/marketing-data";
 import MarketingSelection from "../components/MarketingSelection";
-import MarketingContentModal from "../components/Modals/Content/MarketingContentModal";
 import Modal from "../components/Modal";
-import ProgramManagement from "./ProgramManagement";
+import MarketingContentModal from "../components/Modals/Content/MarketingContentModal";
 import noScroll from "../helpers/noScroll";
+import "../styles/MarketingMaterials.css";
+import ProgramManagement from "./ProgramManagement";
 
 export default function MarketingMaterials() {
   const [data, setData] = useState({ posters: marketingMaterials.posters });

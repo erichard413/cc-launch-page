@@ -1,14 +1,11 @@
-import React from "react";
-import { useState } from "react";
-import "../styles/Home.css";
+import React, { useState } from "react";
 import cardImgs from "../assets/CC-Access-Gift.png";
-import womanHoldingPhone from "../assets/woman-holding-phone.png";
 import "../assets/fonts/BankGothic Bold.ttf";
+import noScroll from "../helpers/noScroll";
+import "../styles/Home.css";
 import Modal from "./Modal";
-import { ContentModal } from "./Modals/ContentModal";
 import CompareGiftIncentiveModal from "./Modals/Content/CompareGiftIncentiveModal";
 import SolutionGuideModal from "./Modals/Content/SolutionGuideModal";
-import noScroll from "../helpers/noScroll";
 
 export default function Home() {
   const [modalState, setModalState] = useState(false);

@@ -1,13 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import appstore from "../assets/appstore.png";
 import googstore from "../assets/googlestore.png";
-import { useState } from "react";
+import noScroll from "../helpers/noScroll";
+import "../styles/Footer.css";
 import Modal from "./Modal";
 import PrivacyPolicyModal from "./Modals/Content/PrivacyPolicyModal";
-import "../styles/Footer.css";
-import { Link } from "react-router-dom";
 import TosModal from "./Modals/Content/TosModal";
-import noScroll from "../helpers/noScroll";
 
 export default function Footer() {
   const [modalState, setModalState] = useState(false);
@@ -27,8 +26,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-nav-div">
-        <Link to="/home">Home</Link> |
-        <Link to="/products/access">Products</Link> |
+        <Link to="/">Home</Link> |<Link to="/products/access">Products</Link> |
         <Link to="/marketing">Program Management</Link> |
         <Link to="/faq/access">FAQ</Link> |<Link to="/training">Training</Link>{" "}
         |<Link to="/contactus">Contact Us</Link>

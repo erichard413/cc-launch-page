@@ -1,16 +1,16 @@
 import {
-  useRef,
-  useState,
-  useEffect,
-  useLayoutEffect,
   Children,
   cloneElement,
   isValidElement,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
 } from "react";
-import "../styles/modals/Modal.css";
-import { useNavigate } from "react-router-dom";
 import { createPortal } from "react-dom";
+import { useNavigate } from "react-router-dom";
 import noScroll from "../helpers/noScroll";
+import "../styles/modals/Modal.css";
 
 function Modal({
   setModalState,
