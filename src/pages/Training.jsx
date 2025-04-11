@@ -34,26 +34,28 @@ export default function Training() {
               <span className="mini-header">Manuals</span> <br />
             </p>{" "}
             <ul>
-              <li
-                className="click-li"
-                onClick={() => {
-                  noScroll(true);
-                  setModalPdfState(true);
-                }}
-              >
-                CC Studio Training Manual
+              <li className="click-li">
+                <span
+                  onClick={() => {
+                    noScroll(true);
+                    setModalPdfState(true);
+                  }}
+                >
+                  CC Studio Training Manual
+                </span>
               </li>
             </ul>
             <br />
             <span className="mini-header">Videos</span> <br />
             <ul>
-              <li
-                className="click-li"
-                onClick={() =>
-                  handleVideoClick("yikgcpz3Jh4?si=2-DuYsxIYiGcaYqq")
-                }
-              >
-                Registering your gift card for online purchases
+              <li className="click-li">
+                <span
+                  onClick={() =>
+                    handleVideoClick("yikgcpz3Jh4?si=2-DuYsxIYiGcaYqq")
+                  }
+                >
+                  Registering your gift card for online purchases
+                </span>
               </li>
               <li>CC Studio Training Videos</li>
             </ul>
@@ -72,55 +74,95 @@ export default function Training() {
           </div>
         </div>
         <ul id="training-list">
-          <li
-            onClick={() => handleVideoClick("fOVEjjY5w4s?si=XI4bY7I2m_bWHWMP")}
-          >
-            Section 1 - CC Studio Launch Page
+          <li>
+            <span
+              onClick={() =>
+                handleVideoClick("fOVEjjY5w4s?si=XI4bY7I2m_bWHWMP")
+              }
+            >
+              Section 1 - CC Studio Launch Page
+            </span>
           </li>
-          <li
-            onClick={() => handleVideoClick("3i-c_IG3dec?si=2yr1ABHreMTzythD")}
-          >
-            Section 2 - Logging into CC Studio
+          <li>
+            <span
+              onClick={() =>
+                handleVideoClick("3i-c_IG3dec?si=2yr1ABHreMTzythD")
+              }
+            >
+              Section 2 - Logging into CC Studio
+            </span>
           </li>
-          <li
-            onClick={() => handleVideoClick("UHYs1q7v0nc?si=35Wguh0Z8WdWdFUE")}
-          >
-            Section 3 - Introduction to CC Studio
+          <li>
+            <span
+              onClick={() =>
+                handleVideoClick("UHYs1q7v0nc?si=35Wguh0Z8WdWdFUE")
+              }
+            >
+              Section 3 - Introduction to CC Studio
+            </span>
           </li>
-          <li
-            onClick={() => handleVideoClick("S5ufO_AtVFU?si=jvdi6Uwyi8rGOAOj")}
-          >
-            Section 4 - Checking Card Balance
+          <li>
+            <span
+              onClick={() =>
+                handleVideoClick("S5ufO_AtVFU?si=jvdi6Uwyi8rGOAOj")
+              }
+            >
+              Section 4 - Checking Card Balance
+            </span>
           </li>
-          <li
-            onClick={() => handleVideoClick("muG-cxm_1C4?si=WnQHg9g1kJOCIx0W")}
-          >
-            Section 5 - Selling Gift & Incentive Cards (Single Load)
+          <li>
+            <span
+              onClick={() =>
+                handleVideoClick("muG-cxm_1C4?si=WnQHg9g1kJOCIx0W")
+              }
+            >
+              Section 5 - Selling Gift & Incentive Cards (Single Load)
+            </span>
           </li>
-          <li
-            onClick={() => handleVideoClick("qXmLeYr1inQ?si=uP5UW0zBYUqt22NF")}
-          >
-            Section 6 - Selling Access Cards
+          <li>
+            <span
+              onClick={() =>
+                handleVideoClick("qXmLeYr1inQ?si=uP5UW0zBYUqt22NF")
+              }
+            >
+              Section 6 - Selling Access Cards
+            </span>
           </li>
-          <li
-            onClick={() => handleVideoClick("0OwuT-2Caxs?si=neqoNVkC-uksaSTU")}
-          >
-            Section 7 - Printing Cardholder Agreements & Receipts
+          <li>
+            <span
+              onClick={() =>
+                handleVideoClick("0OwuT-2Caxs?si=neqoNVkC-uksaSTU")
+              }
+            >
+              Section 7 - Printing Cardholder Agreements & Receipts
+            </span>
           </li>
-          <li
-            onClick={() => handleVideoClick("BW-LSbRiTlY?si=pt9RewxDEMEpLZeq")}
-          >
-            Section 8 - Reloading Access Cards
+          <li>
+            <span
+              onClick={() =>
+                handleVideoClick("BW-LSbRiTlY?si=pt9RewxDEMEpLZeq")
+              }
+            >
+              Section 8 - Reloading Access Cards
+            </span>
           </li>
-          <li
-            onClick={() => handleVideoClick("7pyjUdrDMgI?si=FaGXMU4OESplQD1-")}
-          >
-            Section 9 - Updating CC Studio User Profile
+          <li>
+            <span
+              onClick={() =>
+                handleVideoClick("7pyjUdrDMgI?si=FaGXMU4OESplQD1-")
+              }
+            >
+              Section 9 - Updating CC Studio User Profile
+            </span>
           </li>
-          <li
-            onClick={() => handleVideoClick("hHdMAqSbXLA?si=i4GBp7p59vnsG8AN")}
-          >
-            Section 10 - Bank Administrator Functions
+          <li>
+            <span
+              onClick={() =>
+                handleVideoClick("hHdMAqSbXLA?si=i4GBp7p59vnsG8AN")
+              }
+            >
+              Section 10 - Bank Administrator Functions
+            </span>
           </li>
         </ul>
       </div>

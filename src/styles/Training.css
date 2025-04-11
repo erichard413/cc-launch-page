@@ -61,10 +61,12 @@
   list-style: none;
   text-align: left;
 }
+.Training span {
+  cursor: pointer;
+}
 #training-list li {
   padding: 10px;
   color: #0c2074;
-  cursor: pointer;
 }
 .training-video-modal {
   width: 80vw !important;
@@ -82,7 +84,6 @@
 }
 .Training .click-li {
   color: #0c2074;
-  cursor: pointer;
 }
 @media (max-width: 480px) {
   .Training #left-div {

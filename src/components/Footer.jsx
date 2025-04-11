@@ -4,7 +4,7 @@ import appstore from "../assets/appstore.png";
 import googstore from "../assets/googlestore.png";
 import noScroll from "../helpers/noScroll";
 import "../styles/Footer.css";
-import Modal from "./Modal";
+import Modal from "./Modal.jsx";
 import PrivacyPolicyModal from "./Modals/Content/PrivacyPolicyModal";
 import TosModal from "./Modals/Content/TosModal";
 
@@ -19,9 +19,19 @@ export default function Footer() {
             <p>Download our app</p>
             <p>to check balances on the go</p>
           </div>
-          <div>
-            <img src={appstore} alt="Apple store logo" />
-            <img src={googstore} alt="Google store logo" />
+          <div id="footer-stores">
+            <Link
+              to="https://apps.apple.com/us/app/convenientcards-mobile-banking/id1208131454"
+              target="_blank"
+            >
+              <img src={appstore} alt="Apple store logo" />
+            </Link>
+            <Link
+              to="https://play.google.com/store/apps/details?id=com.corecard.convenientselfservice&pli=1"
+              target="_blank"
+            >
+              <img src={googstore} alt="Google store logo" />
+            </Link>
           </div>
         </div>
       </div>

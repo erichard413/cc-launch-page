@@ -60,3 +60,6 @@
   font-size: 0.7rem;
   padding: 10px;
 }
+.Footer #footer-stores img:hover {
+  cursor: pointer;
+}
